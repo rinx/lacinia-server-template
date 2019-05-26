@@ -17,7 +17,10 @@
                  [com.walmartlabs/lacinia "0.33.0-alpha-3"]
                  [com.walmartlabs/lacinia-pedestal "0.11.0"]
                  [metosin/jsonista "0.2.2"]
-                 [camel-snake-kebab "0.4.0"]]
+                 [camel-snake-kebab "0.4.0"]
+                 [org.clojure/java.jdbc "0.7.9"]
+                 [org.postgresql/postgresql "42.2.5"]
+                 [walkable "1.2.0-SNAPSHOT"]]
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
                    :source-paths ["dev"]}
              :uberjar {:aot :all
