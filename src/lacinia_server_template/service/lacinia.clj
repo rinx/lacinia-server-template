@@ -10,7 +10,8 @@
   (-> server.schema/schema
       (util/attach-resolvers (resolver/resolvers))
       (schema/compile)
-      (pedestal/service-map {:graphiql true})))
+      (pedestal/service-map {:graphiql true
+                             :ide-path "/graphiql"})))
 
 (comment
   (service-map))
